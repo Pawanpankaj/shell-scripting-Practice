@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# To store the logs whether it is getting failed or not
 LOG_FILE="s3_https_enforcement.log"
 DATE=$(date '+%Y-%m-%d %H:%M:%S')
 
