@@ -2,16 +2,16 @@
 ############################################################################
 # This script will launch a new EC2 instance using AWS CLI.
 aws ec2 run-instances \
-  --image-id ami-0ecb62995f68bb549 \
+  --image-id ami-04233b5aecce09244 \
   --instance-type t3.micro \
   --key-name keypair \
   --count 1 \
   --network-interfaces '[
     {
       "DeviceIndex": 0,
-      "SubnetId": "subnet-0272e8c86474ba623",
+      "SubnetId": "subnet-079832abdf54fd1f0",
       "AssociatePublicIpAddress": true,
-      "Groups": ["sg-046bbdb07b7cb2c21"]
+      "Groups": ["sg-00c13574c643564b1"]
     }
   ]' \
   --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=MyPublicEC2}]'
